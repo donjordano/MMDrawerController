@@ -80,6 +80,9 @@ When a drawer is open, you can control how a user can interact with the center v
 * **MMDrawerOpenCenterInteractionModeFull**: The user can interact with all content in the center view.
 * **MMDrawerOpenCenterInteractionModeNavigationBarOnly**: The user can interact with only content on the navigation bar. The setting allows the menu button to still respond, allowing you to toggle the drawer closed when it is open. This is the default setting.
 
+###View Controller Containment
+`MMDrawerController` is built leveraging view controller containment, the view controller appearance methods are properly forwarded to the child view controllers when the drawers appear and disappear. The example project has been setup to demonstrate that with the console logs.
+
 ###Accessing the Drawer Controller from a Child View Controller
 You can use the `UIViewController+MMDrawerController` category in order to query the drawerController directly from child view controllers.
 
